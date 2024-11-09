@@ -94,6 +94,34 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
 }
 
+.mask {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    transition: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 10px solid rgba(16, 71, 161, 0.6);
+    border-left-color: #102746;
+    animation: loader 1.3s linear infinite;
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /*Header start*/
 
 .header {
