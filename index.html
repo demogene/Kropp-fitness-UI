@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,18 @@
     <title>Fitness UI</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="mask">
-        <div class="loader">
-            
-        </div>
+        <div class="loader"></div>
     </div>
-  <header class="header">
+    <header class="header open">
         <div class="header__container">
+            <button class="header__burger-btn" id="burger">
+                <span class="burger-lines first-line"></span>
+                <span class="burger-lines second-line"></span>
+                <span class="burger-lines third-line"></span>
+            </button>
             <a class="header-logo">
                 <img src="./images/png/Kropp header logo.png" alt="Kropp logo">
             </a>
@@ -29,241 +34,260 @@
             </div>
             <div class="header-sign_in">
                 <button type="button" class="book-now">Book now</button>
-                <img src="./images/svg/Burger.svg" alt="Menu">
             </div>
         </div>
-  </header>
-  <main class="main">
-    <section class="first-section">
-        <div class="welcome" >
-          <div class="welcome__inner">
-              <div class="welcome__inner__date">
-                  <img src="./images/png/Arrow down right.png" class="welcome__inner-img" alt="Arrow down">
-                  <p class="welcome__inner-desc">New event <br> coming up / june 7 - 13</p>
-              </div>
-              <div>
-                  <h1 class="welcome__inner-title">CROSSFIT</h1>
-              </div>
-          </div>
-          <div class="welcome-buttons-block">
-              <ul class="welcome-buttons-list">
-                  <li class="welcome-buttons-items">
-                      <button type="button" class="welcome-buttons"></button>
-                  </li>
-                  <li class="welcome-buttons-items">
-                      <button type="button" class="welcome-buttons"></button>
-                  </li>
-                  <li class="welcome-buttons-items">
-                      <button type="button" class="welcome-buttons current-button"></button>
-                  </li>
-              </ul>
-            </div>
-        </div>
-        <div class="strong">
-          <div class="strong-start-container">
-           <div class="mini-strong">
-             <div class="strong__wrapper">
-                <div class="strong__wrapper-about">
-                    <h3 class="strong-title problem-elements"><span class="hidden-title hidden-strong">STRONG</span>Be you, just stronger! <br> Power is in you</h3>
-                    <p class="strong-desc">Unum solum justo ex ius. Pro cu probo laboramus <br> eius insolens euripidis te eos, ut agam tota.</p>
-                    <a href="#!" class="buttons view-more">View more <img src="./images/png/Arrow up right.png" alt="Arrow up right" class="arrow-in-viewmore"></a>
+    </header>
+    <main class="main">
+        <section class="first-section">
+            <div class="welcome">
+                <div class="welcome__inner">
+                    <div class="welcome__inner__date">
+                        <img src="./images/png/Arrow down right.png" class="welcome__inner-img" alt="Arrow down">
+                        <p class="welcome__inner-desc">New event <br> coming up / june 7 - 13</p>
+                    </div>
+                    <div>
+                        <h1 class="welcome__inner-title">CROSSFIT</h1>
+                    </div>
                 </div>
-             </div>
-             <div class="strong__image">
-                <img src="./images/jpg/Strong.jpg" alt="Strong" class="strong-img-media">
-             </div> 
-           </div>
-          </div>
-        </div>
-        <div class="start">
-          <div class="strong-start-container">
-           <div class="mini-start">
-              <div class="start__image">
-                <img src="./images/jpg/Start.jpg" alt="Start" class="start-img-media">
-              </div>
-              <div class="start__wrapper">
-                <div class="start__wrapper-about">
-                      <h3 class="start-title problem-elements"><span class="hidden-title hidden-start">START</span>Today is the best <br> day to start!</h3>
-                      <p class="start-desc">Sed abhorreant constituam consectetuer eu. At mei <br> clita deserunt, his movet molestie nemore.</p>
-                      <a href="#!" class="buttons view-more">View more <img src="./images/png/Arrow up right.png" alt="Arrow up right" class="arrow-in-viewmore"></a>
-                </div>
-              </div>
-           </div>
-          </div>
-        </div>
-        <div class="elements">
-           <div class="elements__wrapper">
-              <div class="elements-alone">
-                 <img src="./images/svg/Maxpump.svg" class="bottom-elements-image" alt="">
-                 <h3 class="elments-text">Maxpump</h3>
-              </div>
-              <div class="elements-alone">
-                 <img src="./images/svg/Aron Gym.svg" class="bottom-elements-image" alt="">
-                 <h3 class="elments-text">Aron gym</h3>
-              </div>
-              <div class="elements-alone">
-                 <img src="./images/svg/Fit & Tone.svg" class="bottom-elements-image" alt="">
-                 <h3 class="elments-text">Fit & Tone</h3>
-              </div>
-              <div class="elements-alone">
-                 <img src="./images/svg/Forza.svg" class="bottom-elements-image" alt="">
-                 <h3 class="elments-text">Forza</h3>
-              </div>
-              <div class="elements-alone">
-                 <img src="./images/svg/Balance fitness.svg" class="bottom-elements-image" alt="">
-                 <h3 class="elments-text">Balance fitness</h3>
-              </div>
-              <div class="elements-alone">
-                 <img src="./images/svg/Body sculpt.svg" class="bottom-elements-image" alt="">
-                 <h3 class="elments-text">Body sculpt</h3>
-              </div>
-           </div>
-        </div>
-    </section>
-    <section class="second-section">
-        <div class="registration">
-           <div class="registration-wrapper">
-               <div class="registration-video">
-                   <video src="" poster="./images/jpg/Go little.jpg"></video>
-                   <button type="button" class="play-video-button">PLAY</button>
-               </div>
-               <div class="join-us container-join-us">
-                   <h2 class="join-us-title">Join us</h2>
-                   <form class="join-us-form">
-                       <div class="join-us-subtitle">
-                          <h3 class="join-us-form-title problem-elements"><span class="hidden-title hidden-join-us">GO!</span>Start here</h3>
-                          <p class="join-us-form-desc">Fill the form below to start your journey</p> 
-                       </div>
-                       <div class="join-us-form-input">
-                           <input placeholder="Name" class="join-us-input">
-                           <input placeholder="Email" class="join-us-input">
-                           <button type="submit" class="buttons">Subscribe<img src="./images/png/Arrow up right.png" alt="Arrow up right" class="join-us-arrow"></button>
-                       </div>
-                   </form>
-               </div>
-           </div>
-        </div>
-        <div class="find">
-            <div class="find-wrapper">
-                <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2321.930627725505!2d9.504543076218743!3d54.41120119451922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b375e00729ef8f%3A0xcc48e4a39d8665d9!2sBALANCE%20FITNESS%20Kropp!5e0!3m2!1sru!2s!4v1727657754204!5m2!1sru!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="find-us">
-                    <h2 class="find-us-title problem-elements"><span class="hidden-title hidden-find">LOOK</span>Find us near you</h2>
-                    <p class="find-us-desc">Nec suas signiferumque id. An eum labore commodo principes. <br> Usu diam noluisse cu, nam adipisci</p>
-                    <a href="#!" class="buttons view-more">View more <img src="./images/png/Arrow up right.png" alt="Arrow up right" class="find-arrow"></a>
+                <div class="welcome-buttons-block">
+                    <ul class="welcome-buttons-list">
+                        <li class="welcome-buttons-items">
+                            <button type="button" class="welcome-buttons"></button>
+                        </li>
+                        <li class="welcome-buttons-items">
+                            <button type="button" class="welcome-buttons"></button>
+                        </li>
+                        <li class="welcome-buttons-items">
+                            <button type="button" class="welcome-buttons current-button"></button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="family">
-            <div class="family-wrapper">
-                <div class="family-join">
-                    <h2 class="family-join-title problem-elements"><span class="hidden-title hidden-family">Part</span>Be a part of our fit family</h2>
-                    <p class="family-join-desc">Training helps you think and feel better. join us!</p>
-                </div>
-                <div class="family-gallery">
-                    <div class="mySlide fade">
-                        <img src="./images/jpg/First gallery image.jpg" alt="" class="slide">
-                        <span class="text"></span>
-                    </div>
-                    <div class="mySlide fade">
-                        <img src="./images/jpg/Second gallery image.jpg" alt="" class="slide">
-                        <span class="text"></span>
-                    </div>
-                    <div class="mySlide fade">
-                        <img src="./images/jpg/Third gallery image.jpg" alt="" class="slide">
-                        <span class="text"></span>
-                    </div>
-                    <div class="mySlide fade">
-                        <img src="./images/jpg/Fourth gallery image.jpg" alt="" class="slide">
-                        <span class="text"></span>
-                    </div>
-                    <button class="prev">&lt;</button>
-                    <button class="next">&gt;</button>
-                    <div class="dots">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
+            <div class="strong">
+                <div class="strong-start-container">
+                    <div class="mini-strong">
+                        <div class="strong__wrapper">
+                            <div class="strong__wrapper-about">
+                                <h3 class="strong-title problem-elements"><span
+                                        class="hidden-title hidden-strong">STRONG</span>Be you, just stronger! <br>
+                                    Power is in you</h3>
+                                <p class="strong-desc">Unum solum justo ex ius. Pro cu probo laboramus <br> eius
+                                    insolens euripidis te eos, ut agam tota.</p>
+                                <a href="#!" class="buttons view-more">View more <img
+                                        src="./images/png/Arrow up right.png" alt="Arrow up right"
+                                        class="arrow-in-viewmore"></a>
+                            </div>
+                        </div>
+                        <div class="strong__image">
+                            <img src="./images/jpg/Strong.jpg" alt="Strong" class="strong-img-media">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="calculator">
-            <div class="calculator-wrapper">
-                <div class="input-calculator">
-                    <div class="calculator-banner">
-                        <h2 class="calculator-title problem-elements"><span class="hidden-title hidden-calculator">BMI</span>Input your BMI</h2>
-                        <p class="calculator-desc">Duo graece ponderum ne, ei mel aliquando. Pro te <br> tamquam nonumes, nam no nemore epicurei</p> 
+            <div class="start">
+                <div class="strong-start-container">
+                    <div class="mini-start">
+                        <div class="start__image">
+                            <img src="./images/jpg/Start.jpg" alt="Start" class="start-img-media">
+                        </div>
+                        <div class="start__wrapper">
+                            <div class="start__wrapper-about">
+                                <h3 class="start-title problem-elements"><span
+                                        class="hidden-title hidden-start">START</span>Today is the best <br> day to
+                                    start!</h3>
+                                <p class="start-desc">Sed abhorreant constituam consectetuer eu. At mei <br> clita
+                                    deserunt, his movet molestie nemore.</p>
+                                <a href="#!" class="buttons view-more">View more <img
+                                        src="./images/png/Arrow up right.png" alt="Arrow up right"
+                                        class="arrow-in-viewmore"></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="calculator-body">
-                        <input placeholder="Height / cm" type="number" class="calculator-input">
-                        <input placeholder="Weight / kg" type="number" class="calculator-input">
-                        <input placeholder="Age" type="number" class="calculator-input">
-                        <select class="calculator-input">
-                            <option value="" disabled selected>Gender</option>
-                            <option value="man">Male</option>
-                            <option value="woman">Female</option>
-                        </select>
-                        <select class="calculator-input ci-big">
-                            <option value="" disabled selected>Select an activity factor:</option>
-                            <option value="activity number 1">Power training</option>
-                            <option value="activity number 2">Cardio training</option>
-                            <option value="activity number 3">Functional training</option>
-                            <option value="activity number 4">Dance training</option>
-                            <option value="activity number 5">Yoga</option>
-                        </select>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="elements__wrapper">
+                    <div class="elements-alone">
+                        <img src="./images/svg/Maxpump.svg" class="bottom-elements-image" alt="">
+                        <h3 class="elments-text">Maxpump</h3>
                     </div>
-                    <button type="submit" class="buttons calculate-submit">Calculate<img src="./images/png/Arrow up right.png" alt="Arrow up right" class="calculator-arrow"></button>
+                    <div class="elements-alone">
+                        <img src="./images/svg/Aron Gym.svg" class="bottom-elements-image" alt="">
+                        <h3 class="elments-text">Aron gym</h3>
+                    </div>
+                    <div class="elements-alone">
+                        <img src="./images/svg/Fit & Tone.svg" class="bottom-elements-image" alt="">
+                        <h3 class="elments-text">Fit & Tone</h3>
+                    </div>
+                    <div class="elements-alone">
+                        <img src="./images/svg/Forza.svg" class="bottom-elements-image" alt="">
+                        <h3 class="elments-text">Forza</h3>
+                    </div>
+                    <div class="elements-alone">
+                        <img src="./images/svg/Balance fitness.svg" class="bottom-elements-image" alt="">
+                        <h3 class="elments-text">Balance fitness</h3>
+                    </div>
+                    <div class="elements-alone">
+                        <img src="./images/svg/Body sculpt.svg" class="bottom-elements-image" alt="">
+                        <h3 class="elments-text">Body sculpt</h3>
+                    </div>
                 </div>
-                 <div class="data-table">
-                    <table class="table-info">
-                        <thead>
-                            <tr>
-                                <th class="table-header left-part">BMI</th>
-                                <th class="table-header right-part">Weight status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="table-desc left-part">Below 18.5</td>
-                                <td class="table-desc right-part">Underweight</td>
-                            </tr>
-                            <tr>
-                                <td class="table-desc left-part">18.5 - 24.9</td>
-                                <td class="table-desc right-part">Healthy</td>
-                            </tr>
-                            <tr>
-                                <td class="table-desc left-part">25.0 - 29.9</td>
-                                <td class="table-desc right-part">Overweight</td>
-                            </tr>
-                            <tr>
-                                <td class="table-desc left-part last-child">30.0 - and Above</td>
-                                <td class="table-desc right-part">Obese</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="2" class="table-foot-desc"><b>BMR</b> Metabolic Rate / <b>BMI</b> Body Mass Index</td>
-                            </tr>
-                        </tfoot>
-                    </table>
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="registration">
+                <div class="registration-wrapper">
+                    <div class="registration-video">
+                        <video src="" poster="./images/jpg/Go little.jpg"></video>
+                        <button type="button" class="play-video-button">PLAY</button>
+                    </div>
+                    <div class="join-us container-join-us">
+                        <h2 class="join-us-title">Join us</h2>
+                        <form class="join-us-form">
+                            <div class="join-us-subtitle">
+                                <h3 class="join-us-form-title problem-elements"><span
+                                        class="hidden-title hidden-join-us">GO!</span>Start here</h3>
+                                <p class="join-us-form-desc">Fill the form below to start your journey</p>
+                            </div>
+                            <div class="join-us-form-input">
+                                <input placeholder="Name" class="join-us-input">
+                                <input placeholder="Email" class="join-us-input">
+                                <button type="submit" class="buttons">Subscribe<img src="./images/png/Arrow up right.png" alt="Arrow up right" class="join-us-arrow"></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>      
-        </div>
-    </section>
-  </main>
- <footer class="footer">
+            </div>
+            <div class="find">
+                <div class="find-wrapper">
+                    <div class="google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2321.930627725505!2d9.504543076218743!3d54.41120119451922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b375e00729ef8f%3A0xcc48e4a39d8665d9!2sBALANCE%20FITNESS%20Kropp!5e0!3m2!1sru!2s!4v1727657754204!5m2!1sru!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="find-us">
+                        <h2 class="find-us-title problem-elements"><span
+                                class="hidden-title hidden-find">LOOK</span>Find us near you</h2>
+                        <p class="find-us-desc">Nec suas signiferumque id. An eum labore commodo principes. <br> Usu
+                            diam noluisse cu, nam adipisci</p>
+                        <a href="#!" class="buttons view-more">View more <img src="./images/png/Arrow up right.png"
+                                alt="Arrow up right" class="find-arrow"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="family">
+                <div class="family-wrapper">
+                    <div class="family-join">
+                        <h2 class="family-join-title problem-elements"><span
+                                class="hidden-title hidden-family">Part</span>Be a part of our fit family</h2>
+                        <p class="family-join-desc">Training helps you think and feel better. join us!</p>
+                    </div>
+                    <div class="family-gallery">
+                        <div class="mySlide fade">
+                            <img src="./images/jpg/First gallery image.jpg" alt="" class="slide">
+                        </div>
+                        <div class="mySlide fade">
+                            <img src="./images/jpg/Second gallery image.jpg" alt="" class="slide">
+                        </div>
+                        <div class="mySlide fade">
+                            <img src="./images/jpg/Third gallery image.jpg" alt="" class="slide">
+                        </div>
+                        <div class="mySlide fade">
+                            <img src="./images/jpg/Fourth gallery image.jpg" alt="" class="slide">
+                        </div>
+                        <button class="prev">&lt;</button>
+                        <button class="next">&gt;</button>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator">
+                <div class="calculator-wrapper">
+                    <div class="input-calculator">
+                        <div class="calculator-banner">
+                            <h2 class="calculator-title problem-elements"><span
+                                    class="hidden-title hidden-calculator">BMI</span>Input your BMI</h2>
+                            <p class="calculator-desc">Duo graece ponderum ne, ei mel aliquando. Pro te <br> tamquam nonumes, nam no nemore epicurei</p>
+                        </div>
+                        <div class="calculator-body">
+                            <input placeholder="Height / cm" type="number" class="calculator-input">
+                            <input placeholder="Weight / kg" type="number" class="calculator-input">
+                            <input placeholder="Age" type="number" class="calculator-input">
+                            <select class="calculator-input">
+                                <option value="" disabled selected>Gender</option>
+                                <option value="man">Male</option>
+                                <option value="woman">Female</option>
+                            </select>
+                            <select class="calculator-input ci-big">
+                                <option value="" disabled selected>Select an activity factor:</option>
+                                <option value="activity number 1">Power training</option>
+                                <option value="activity number 2">Cardio training</option>
+                                <option value="activity number 3">Functional training</option>
+                                <option value="activity number 4">Dance training</option>
+                                <option value="activity number 5">Yoga</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="buttons calculate-submit">Calculate<img
+                                src="./images/png/Arrow up right.png" alt="Arrow up right"
+                                class="calculator-arrow"></button>
+                    </div>
+                    <div class="data-table">
+                        <table class="table-info">
+                            <thead>
+                                <tr>
+                                    <th class="table-header left-part">BMI</th>
+                                    <th class="table-header right-part">Weight status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-desc left-part">Below 18.5</td>
+                                    <td class="table-desc right-part">Underweight</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-desc left-part">18.5 - 24.9</td>
+                                    <td class="table-desc right-part">Healthy</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-desc left-part">25.0 - 29.9</td>
+                                    <td class="table-desc right-part">Overweight</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-desc left-part last-child">30.0 - and Above</td>
+                                    <td class="table-desc right-part">Obese</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class="table-foot-desc"><b>BMR</b> Metabolic Rate / <b>BMI</b> Body
+                                        Mass Index</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
         <div class="footer-wrapper-top">
             <div class="footer__top-area">
                 <div class="footer__logo-area">
                     <img src="./images/png/Kropp footer logo.png" alt="Kropp logo" class="footer-logo">
-                    <p class="footer__top-area-top">please feel free to send us an e-mail at kropp@qodeinteractive.com For any <br> additional inquiries</p>
+                    <p class="footer__top-area-top">please feel free to send us an e-mail at kropp@qodeinteractive.com
+                        For any <br> additional inquiries</p>
                 </div>
                 <div class="footer__info-area">
                     <div class="footer-top-containers">
                         <h2 class="footer__info-title">About</h2>
-                        <p class="footer__info-desc">Shape up your site with Kropp,<br> a theme especially made for <br>fitness & gym websites.</p>
+                        <p class="footer__info-desc">Shape up your site with Kropp,<br> a theme especially made for
+                            <br>fitness & gym websites.</p>
                     </div>
                     <div class="footer-top-containers ft-second-container">
                         <h2 class="footer__info-title">Working hours</h2>
@@ -272,33 +296,39 @@
                     </div>
                     <div class="footer-top-containers ft-third-container">
                         <h2 class="footer__info-title">Location</h2>
-                        <address class="footer__info-adress">68 Jay Street, Brooklyn,<br>NY 11201, United States</address>
-                        <a href="mailto:kropp@qodeinteractive.com" class="footer__info-a">kropp@qodeinteractive.com</a> <br>
+                        <address class="footer__info-adress">68 Jay Street, Brooklyn,<br>NY 11201, United States
+                        </address>
+                        <a href="mailto:kropp@qodeinteractive.com" class="footer__info-a">kropp@qodeinteractive.com</a>
+                        <br>
                         <a href="tel:+17184076400" class="footer__info-a">+ (1) 718 - 407 - 6400</a>
                     </div>
                     <div class="footer-top-containers">
-                        <div class="footer__start-now"><h2>start now</h2><img src="./images/svg/Vector.svg" alt="Vector"></div>
-                        <form action="text" class="footer-input">
-                            <input type="email" placeholder="Email" class="fi-input"><img src="./images/png/Arrow up right.png" class="fi-image" alt="">      
-                        </form>  
+                        <div class="footer__start-now">
+                            <h2>start now</h2><img src="./images/svg/Vector.svg" alt="Vector">
+                        </div>
+                        <a href="mailto:kropp@qodeinteractive.com" class="buttons footer-input">Email<img
+                                src="./images/png/Arrow up right.png" alt="Arrow up right" class="join-us-arrow"></a>
                         <div class="social-media">
-                            <img src="./images/svg/tik tok.svg" alt="">
-                            <img src="./images/svg/you tube.svg" alt="">
-                            <img src="./images/svg/instagram.svg" alt="">
-                            <img src="./images/svg/facebook.svg" alt="">
-                            <img src="./images/svg/twitter.svg" alt="">
-                        </div> 
+                            <a href="#!"><img src="./images/svg/tik tok.svg" alt=""></a>
+                            <a href="#!"><img src="./images/svg/you tube.svg" alt=""></a>
+                            <a href="#!"><img src="./images/svg/instagram.svg" alt=""></a>
+                            <a href="#!"><img src="./images/svg/facebook.svg" alt=""></a>
+                            <a href="#!"><img src="./images/svg/twitter.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-wrapper-bottom">
             <div class="footer__bottom-area">
-                <p class="footer__bottom-are__text">&copy; 2022 Qode Interactive, All Rights Reserved | Privacy Policy | Contact Us</p>
+                <p class="footer__bottom-are__text">&copy; 2022 Qode Interactive, All Rights Reserved | Privacy Policy |
+                    Contact Us</p>
             </div>
-        </div>      
-  </footer>
-  <script src="./js/script.js"></script>
-  <script src="./js/loader.js"></script>
+        </div>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/loader.js"></script>
+    <script defer src="./js/burger.js"></script>
 </body>
+
 </html>
